@@ -1,0 +1,47 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+thead {
+    background-color: rgb(228 240 245);
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+tdbody>tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+
+.lieu {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+}
