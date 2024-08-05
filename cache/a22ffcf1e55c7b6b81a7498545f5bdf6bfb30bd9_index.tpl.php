@@ -1,5 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+/* Smarty version 5.3.1, created on 2024-08-05 18:10:04
+  from 'file:index.tpl' */
+
+/* @var \Smarty\Template $_smarty_tpl */
+if ($_smarty_tpl->getCached()->isFresh($_smarty_tpl, array (
+  'version' => '5.3.1',
+  'unifunc' => 'content_66b0f95c8587f5_45908226',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'a22ffcf1e55c7b6b81a7498545f5bdf6bfb30bd9' => 
+    array (
+      0 => 'index.tpl',
+      1 => 1722872277,
+      2 => 'file',
+    ),
+  ),
+  'cache_lifetime' => 3600,
+))) {
+function content_66b0f95c8587f5_45908226 (\Smarty\Template $_smarty_tpl) {
+$_smarty_current_dir = 'C:\\Users\\Bastien\\Documents\\Intranet Top Net Service\\Intranet\\templates';
+?><!DOCTYPE html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -65,4 +87,5 @@
 
 </body>
 
-</html>
+</html><?php }
+}
