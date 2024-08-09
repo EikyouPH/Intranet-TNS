@@ -47,7 +47,7 @@
             <div class="col">
                 <h1 class="mt-5 mb-3 text-primary">Nouvaux rapport</h1>
                     <form action="process-form.php" method="post">
-                        <label for="nom" class="form-label">Nom de l'intervention</label>
+                        <label for="nom" class="form-label">Nom du rapport</label>
                         <input type="text" class="form-control" id="nom" name="nom-intervention" required style="width: 26rem;">
                         <label for="date" class="form-label">Date</label>
                         <input type="date" id="date" name="date" required class="form-control" style="width: 18rem;">
