@@ -7,7 +7,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">IN TNS</a>
+    <a class="navbar-brand" href="./index.php">IN TNS</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,7 +24,7 @@
             Rapports
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="./listRapports.php">Liste des rapports</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -45,7 +45,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="mt-5 mb-3 text-primary">Nouvaux rapport</h1>
+                <h1 class="mt-5 mb-3 text-primary">Nouveau rapport</h1>
                     <form action="process-form.php" method="post">
                         <label for="nom" class="form-label">Nom du rapport</label>
                         <input type="text" class="form-control" id="nom" name="nom-intervention" required style="width: 26rem;">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.3.1, created on 2024-08-09 18:46:45
+/* Smarty version 5.3.1, created on 2024-08-09 19:01:39
   from 'file:listRapports.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.3.1',
-  'unifunc' => 'content_66b647f5db5f56_96046117',
+  'unifunc' => 'content_66b64b737f93f7_71436270',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '449961a429403f5b1fff114e932bb652034b197c' => 
     array (
       0 => 'listRapports.tpl',
-      1 => 1723221912,
+      1 => 1723222847,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_66b647f5db5f56_96046117 (\Smarty\Template $_smarty_tpl) {
+function content_66b64b737f93f7_71436270 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\Bastien\\Documents\\Intranet Top Net Service\\Intranet\\templates';
-$_smarty_tpl->getCompiled()->nocache_hash = '146102191066b647f5d98977_68155145';
+$_smarty_tpl->getCompiled()->nocache_hash = '13758325466b64b737c4f08_73671218';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -38,7 +38,7 @@ $_smarty_tpl->getCompiled()->nocache_hash = '146102191066b647f5d98977_68155145';
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">IN TNS</a>
+            <a class="navbar-brand" href="./index.php">IN TNS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
