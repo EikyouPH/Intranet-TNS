@@ -170,4 +170,5 @@ sketch
 .history
 .ionide
 
-./templates_c/
+templates_c/
+cache/
