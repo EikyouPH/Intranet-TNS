@@ -1,4 +1,3 @@
-
 ### Node ###
 # Logs
 logs
@@ -170,3 +169,6 @@ sketch
 # Ignore all local history of files
 .history
 .ionide
+
+templates_c/
+cache/
