@@ -50,10 +50,17 @@
     <div class="container text-center">
         <div class="row align-items-center">
             <div class="col">
-                <h1 class="text-primary">Intranet Top Net Service/TNS</h1>
+                <h1 class="text-primary mt-5 mb-5">Intranet Top Net Service/TNS</h1>
             </div>
         </div>
-
+        <div class="row align-items-center">
+            <div class="col">
+            <div class="list-group" style="width: 24rem;">
+                <a href="./listInterventions.php" class="h3 list-group-item list-group-item-action text-primary">Liste des interventions</a>
+                <a href="./listRapports.php" class="h3 list-group-item list-group-item-action text-primary">Liste des rapports</a>
+                
+            </div>
+        </div>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
