@@ -20,6 +20,9 @@ if (isset($_SESSION["user_id"])){
         elseif($intervention["type_inter"] == 2){
             $type = "Tonte";
         }
+        elseif($intervention["type_inter"] == 3){
+            $type = "Balayage";
+        }
         $desc = $intervention["desc_inter"];
         $emp_1 = $intervention["emp_1"];
         $emp_2 = $intervention["emp_2"];
