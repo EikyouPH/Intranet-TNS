@@ -48,12 +48,12 @@
                 <h1 class="mt-5 mb-3 text-primary">Nouvelle intervention</h1>
                     <form action="new_inter.php" method="post">
                         <label for="nom" class="form-label">Nom de l'intervention</label>
-                        <input type="text" class="form-control" id="nom-intervention" name="nom-intervention" required style="width: 26rem;">
+                        <input required type="text" class="form-control" id="nom-intervention" name="nom-intervention" required style="width: 26rem;">
                         <label for="date" class="form-label">Date</label>
-                        <input type="date" id="date" name="date" required class="form-control" style="width: 18rem;">
+                        <input required type="date" id="date" name="date" required class="form-control" style="width: 18rem;">
 
                         <label for="lieu" class="form-label">Entrer le lieu</label>
-                        <input type="text" class="form-control" name="lieu" id="lieu" required placeholder="Ville" style="width: 18rem;">
+                        <input required type="text" class="form-control" name="lieu" id="lieu" required placeholder="Ville" style="width: 18rem;">
 
                         </select>
 
@@ -70,7 +70,7 @@
                             </label>
                         </fieldset>
                         <label class="form-label" for="description">Description</label>
-                        <textarea id="description" name="description" class="form-control"></textarea>
+                        <textarea required id="description" name="description" class="form-control"></textarea>
                         <fieldset>
                             <legend>Employé(s) assigné(s)</legend>
 

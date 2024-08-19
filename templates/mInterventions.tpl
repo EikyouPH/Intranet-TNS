@@ -48,42 +48,44 @@
                 <h1 class="mt-5 mb-3 text-primary">Modification intervention</h1>
                     <form action="process-form.php" method="post">
                         <label for="nom" class="form-label">Nom de l'intervention</label>
-                        <input type="text" class="form-control" id="nom" name="nom-intervention" required style="width: 26rem;">
+                        <input type="text" class="form-control" id="nom" name="nom-intervention" required style="width: 26rem;" value="{$nom}">
                         <label for="date" class="form-label">Date</label>
-                        <input type="date" id="date" name="date" required class="form-control" style="width: 18rem;">
+                        <input type="date" id="date" name="date" required class="form-control" style="width: 18rem;" value="{$date|date_format:'%Y-%m-%d'}">
+
 
                         <label for="in-lieu" class="form-label">Entrer le lieu</label>
-                        <input type="text" class="form-control" name="in-lieu" id="in-lieu" required placeholder="Ville" style="width: 18rem;">
+                        <input type="text" class="form-control" name="lieu" id="lieu" required placeholder="Ville" style="width: 18rem;"
+                        value="{$lieu}">
 
                         </select>
 
                         <fieldset>
                             <legend>Type d'intervention</legend>
                             <label for="type" class="form-label">
-                                <input type="radio" name="type" value="1">
+                                <input type="radio" name="type" value="1" {$type1}>
                                 Taille
                             </label>
 
                             <label for="type" class="form-label">
-                                <input type="radio" name="type" value="2">
+                                <input type="radio" name="type" value="2" {$type2}>
                                 Tonte
                             </label>
                         </fieldset>
                         <label class="form-label" for="description">Description</label>
-                        <textarea id="description" name="description" class="form-control"></textarea>
+                        <textarea id="description" name="description" class="form-control">{$description}</textarea>
                         <fieldset>
                             <legend>Employé(s) assigné(s)</legend>
 
                             <label class="form-label">
-                                <input type="checkbox" name="employe_1" class="form-label">
+                                <input type="checkbox" name="employe_1" class="form-label" {$check1}>
                                 Kévin
                             </label><br>
                             <label class="form-label">
-                                <input type="checkbox" name="employe_2" class="form-label">
+                                <input type="checkbox" name="employe_2" class="form-label" {$check2}>
                                 Maxime
                             </label><br>
                             <label class="form-label">
-                                <input type="checkbox" name="employe_3">
+                                <input type="checkbox" name="employe_3" class="form-label" {$check3}>
                                 Steeve
                             </label><br>
                         </fieldset>

@@ -37,6 +37,9 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item text-end">
+                        <a class="nav-link text-danger" href="./logout.php">Se déconnecter</a>
+                    </li>
                 </ul>
                 <!--
             <form class="d-flex" role="search">
@@ -51,6 +54,11 @@
         <div class="row align-items-center">
             <div class="col">
                 <h1 class="text-primary mt-5 mb-5">Intranet Top Net Service/TNS</h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="text-secondary mt-5 mb-5">Bienvenue {$user}</h3>
             </div>
         </div>
         <div class="row align-items-center">

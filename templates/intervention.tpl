@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Listes Interventions</title>
+    <title>{$nom}</title>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -50,50 +48,22 @@
             </div>
         </div>
     </nav>
-
     <div class="container">
-        <div class="row mt-5">
-            <h1>Liste des interventions</h1>
-            <div class="row mb-5 mt-3">
-                <div class="col-1">
-                    <select name="sort" id="sort">
-                        <option value="">--Trier--</option>
-                        <option value="1">Date</option>
-                        <option value="2">Nom</option>
-                        <option value="3">Lieu</option>
-                    </select>
-                </div>
-                <div class="col-1">
-                    <select name="Type" id="type">
-                        <option value="">--Type--</option>
-                        <option value="1">Taille</option>
-                        <option value="2">Tonte</option>
-                        <option value="3">Balayage</option>
-                    </select>
-                </div>
-                <div class="col text-end">
-                    <a href="./nIntervention.php" class="btn btn-success">Nouvelle intervention</a>
-                </div>
-            </div>
+        <div class="row mb-3 mt-3">
+            <h1 class="text-primary border-bottom border-primary">{$nom}</h1>
+        </div>
+        <div class="row mb-3">
+            <h4 class="text-secondary">{$lieu}, {$date}, Equipe : {$employe1} {$employe2}</h3>
         </div>
         <div class="row">
-            {foreach from = $interventions key = k item = inter}
-                <div class="card m-2" style="width: 18rem;">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">{$inter.nom}</h5>
-                        <p class="card-text">{$inter.lieu}, {$inter.date}</p>
-                        <a href="./intervention.php?id={$inter.id}" class="btn btn-primary">Voir</a>
-                        <a href="./mInterventions.php?id={$inter.id}" class="btn btn-warning">Modifier</a> 
-                    </div>
-                </div>
-            {/foreach}
+            <h4 class="text-black">{$type}</h4>
         </div>
-
+        <div class="row mb-5 mt-5">
+            <p class="h3 border border-primary rounded p-3">Description : {$description}</p>
+        </div>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
 </html>
