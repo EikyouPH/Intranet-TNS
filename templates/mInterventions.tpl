@@ -46,7 +46,7 @@
         <div class="row">
             <div class="col">
                 <h1 class="mt-5 mb-3 text-primary">Modification intervention</h1>
-                    <form action="process-form.php" method="post">
+                    <form action="./upIntervention.php" method="post">
                         <label for="nom" class="form-label">Nom de l'intervention</label>
                         <input type="text" class="form-control" id="nom" name="nom-intervention" required style="width: 26rem;" value="{$nom}">
                         <label for="date" class="form-label">Date</label>
@@ -70,6 +70,10 @@
                                 <input type="radio" name="type" value="2" {$type2}>
                                 Tonte
                             </label>
+                            <label for="type" class="form-label">
+                                <input type="radio" name="type" value="3" {$type3}>
+                                Balayage
+                            </label>
                         </fieldset>
                         <label class="form-label" for="description">Description</label>
                         <textarea id="description" name="description" class="form-control">{$description}</textarea>
@@ -89,7 +93,7 @@
                                 Steeve
                             </label><br>
                         </fieldset>
-
+                        <input type=text name="id_inter" value="{$id}" class="invisible">
                         <br>
                         <a class="btn btn-danger" href="./listInterventions.php">Annuler</a> 
                         <input type="submit" value="Confirmer" class="btn btn-success">

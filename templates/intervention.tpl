@@ -56,7 +56,7 @@
             <h4 class="text-secondary">{$lieu}, {$date}, Equipe : {$employe1} {$employe2}</h3>
         </div>
         <div class="row">
-            <h4 class="text-black">{$type}</h4>
+            <h4 class="text-black">Type : {$type}</h4>
         </div>
         <div class="row mb-5 mt-5">
             <p class="h3 border border-primary rounded p-3">Description : {$description}</p>

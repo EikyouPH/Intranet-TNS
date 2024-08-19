@@ -68,6 +68,10 @@
                                 <input type="radio" name="type" value="2">
                                 Tonte
                             </label>
+                            <label for="type" class="form-label">
+                                <input type="radio" name="type" value="3">
+                                Balayage
+                            </label>
                         </fieldset>
                         <label class="form-label" for="description">Description</label>
                         <textarea required id="description" name="description" class="form-control"></textarea>
