@@ -46,14 +46,14 @@
         <div class="row">
             <div class="col">
                 <h1 class="mt-5 mb-3 text-primary">Nouvelle intervention</h1>
-                    <form action="process-form.php" method="post">
+                    <form action="new_inter.php" method="post">
                         <label for="nom" class="form-label">Nom de l'intervention</label>
-                        <input type="text" class="form-control" id="nom" name="nom-intervention" required style="width: 26rem;">
+                        <input type="text" class="form-control" id="nom-intervention" name="nom-intervention" required style="width: 26rem;">
                         <label for="date" class="form-label">Date</label>
                         <input type="date" id="date" name="date" required class="form-control" style="width: 18rem;">
 
-                        <label for="in-lieu" class="form-label">Entrer le lieu</label>
-                        <input type="text" class="form-control" name="in-lieu" id="in-lieu" required placeholder="Ville" style="width: 18rem;">
+                        <label for="lieu" class="form-label">Entrer le lieu</label>
+                        <input type="text" class="form-control" name="lieu" id="lieu" required placeholder="Ville" style="width: 18rem;">
 
                         </select>
 
@@ -75,15 +75,15 @@
                             <legend>Employé(s) assigné(s)</legend>
 
                             <label class="form-label">
-                                <input type="checkbox" name="employe_1" class="form-label">
+                                <input type="checkbox" name="employe_1" id="employe_1" class="form-label">
                                 Kévin
                             </label><br>
                             <label class="form-label">
-                                <input type="checkbox" name="employe_2" class="form-label">
+                                <input type="checkbox" name="employe_2" id="employe_2" class="form-label">
                                 Maxime
                             </label><br>
                             <label class="form-label">
-                                <input type="checkbox" name="employe_3">
+                                <input type="checkbox" name="employe_3" id="employe_3" class="form-label">
                                 Steeve
                             </label><br>
                         </fieldset>

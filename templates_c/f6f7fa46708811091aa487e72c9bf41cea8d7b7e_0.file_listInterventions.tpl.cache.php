@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 5.3.1, created on 2024-08-09 19:16:56
+/* Smarty version 5.3.1, created on 2024-08-19 09:34:55
   from 'file:listInterventions.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   'version' => '5.3.1',
-  'unifunc' => 'content_66b64f080dc701_30980817',
+  'unifunc' => 'content_66c2f59fca02d1_59016114',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f6f7fa46708811091aa487e72c9bf41cea8d7b7e' => 
     array (
       0 => 'listInterventions.tpl',
-      1 => 1723222844,
+      1 => 1723224241,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->getCompiled()->isFresh($_smarty_tpl, array (
   array (
   ),
 ))) {
-function content_66b64f080dc701_30980817 (\Smarty\Template $_smarty_tpl) {
+function content_66c2f59fca02d1_59016114 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\Bastien\\Documents\\Intranet Top Net Service\\Intranet\\templates';
-$_smarty_tpl->getCompiled()->nocache_hash = '132374570666b64f080c1aa0_59475675';
+$_smarty_tpl->getCompiled()->nocache_hash = '190337636566c2f59fbda362_63821003';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -103,24 +103,24 @@ $_smarty_tpl->getCompiled()->nocache_hash = '132374570666b64f080c1aa0_59475675';
             </div>
         </div>
         <div class="row">
-        <?php
+            <?php
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('interventions'), 'inter', false, 'k');
 $foreach0DoElse = true;
 foreach ($_from ?? [] as $_smarty_tpl->getVariable('k')->value => $_smarty_tpl->getVariable('inter')->value) {
 $foreach0DoElse = false;
 ?>
-            <div class="card m-2" style="width: 18rem;">
-                
-                <div class="card-body">
-                    <h5 class="card-title text-primary"><?php echo $_smarty_tpl->getValue('inter')['nom'];?>
+                <div class="card m-2" style="width: 18rem;">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title text-primary"><?php echo $_smarty_tpl->getValue('inter')['nom'];?>
 </h5>
-                    <p class="card-text"><?php echo $_smarty_tpl->getValue('inter')['lieu'];?>
+                        <p class="card-text"><?php echo $_smarty_tpl->getValue('inter')['lieu'];?>
 ,<?php echo $_smarty_tpl->getValue('inter')['date'];?>
 </p>
-                    <a href="#" class="btn btn-primary">Voir</a>
-                    <a href="./mInterventions.php" class="btn btn-warning">Modifier</a> 
+                        <a href="#" class="btn btn-primary">Voir</a>
+                        <a href="./mInterventions.php" class="btn btn-warning">Modifier</a> 
+                    </div>
                 </div>
-            </div>
             <?php
 }
 $_smarty_tpl->getSmarty()->getRuntime('Foreach')->restore($_smarty_tpl, 1);?>

@@ -77,16 +77,16 @@
             </div>
         </div>
         <div class="row">
-        {foreach from = $interventions key = k item = inter}
-            <div class="card m-2" style="width: 18rem;">
-                
-                <div class="card-body">
-                    <h5 class="card-title text-primary">{$inter.nom}</h5>
-                    <p class="card-text">{$inter.lieu},{$inter.date}</p>
-                    <a href="#" class="btn btn-primary">Voir</a>
-                    <a href="./mInterventions.php" class="btn btn-warning">Modifier</a> 
+            {foreach from = $interventions key = k item = inter}
+                <div class="card m-2" style="width: 18rem;">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">{$inter.nom}</h5>
+                        <p class="card-text">{$inter.lieu},{$inter.date}</p>
+                        <a href="#" class="btn btn-primary">Voir</a>
+                        <a href="./mInterventions.php" class="btn btn-warning">Modifier</a> 
+                    </div>
                 </div>
-            </div>
             {/foreach}
         </div>
 

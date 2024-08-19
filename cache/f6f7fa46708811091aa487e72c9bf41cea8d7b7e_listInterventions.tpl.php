@@ -1,24 +1,24 @@
 <?php
-/* Smarty version 5.3.1, created on 2024-08-09 19:16:56
+/* Smarty version 5.3.1, created on 2024-08-19 09:34:55
   from 'file:listInterventions.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCached()->isFresh($_smarty_tpl, array (
   'version' => '5.3.1',
-  'unifunc' => 'content_66b64f081623b1_84423254',
+  'unifunc' => 'content_66c2f59fd1a3c7_26524156',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f6f7fa46708811091aa487e72c9bf41cea8d7b7e' => 
     array (
       0 => 'listInterventions.tpl',
-      1 => 1723222844,
+      1 => 1723224241,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 3600,
 ))) {
-function content_66b64f081623b1_84423254 (\Smarty\Template $_smarty_tpl) {
+function content_66c2f59fd1a3c7_26524156 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = 'C:\\Users\\Bastien\\Documents\\Intranet Top Net Service\\Intranet\\templates';
 ?><!DOCTYPE html>
 <html lang="fr">
@@ -99,24 +99,24 @@ $_smarty_current_dir = 'C:\\Users\\Bastien\\Documents\\Intranet Top Net Service\
             </div>
         </div>
         <div class="row">
-                    <div class="card m-2" style="width: 18rem;">
-                
-                <div class="card-body">
-                    <h5 class="card-title text-primary">Taille Norma Forbach</h5>
-                    <p class="card-text">Forbach,15/08/24</p>
-                    <a href="#" class="btn btn-primary">Voir</a>
-                    <a href="./mInterventions.php" class="btn btn-warning">Modifier</a> 
+                            <div class="card m-2" style="width: 18rem;">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Taille Norma Forbach</h5>
+                        <p class="card-text">Forbach,15/08/24</p>
+                        <a href="#" class="btn btn-primary">Voir</a>
+                        <a href="./mInterventions.php" class="btn btn-warning">Modifier</a> 
+                    </div>
                 </div>
-            </div>
-                        <div class="card m-2" style="width: 18rem;">
-                
-                <div class="card-body">
-                    <h5 class="card-title text-primary">Tonte KFC Feguersheim</h5>
-                    <p class="card-text">Feguersheim,16/08/24</p>
-                    <a href="#" class="btn btn-primary">Voir</a>
-                    <a href="./mInterventions.php" class="btn btn-warning">Modifier</a> 
+                            <div class="card m-2" style="width: 18rem;">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Tonte KFC Feguersheim</h5>
+                        <p class="card-text">Feguersheim,16/08/24</p>
+                        <a href="#" class="btn btn-primary">Voir</a>
+                        <a href="./mInterventions.php" class="btn btn-warning">Modifier</a> 
+                    </div>
                 </div>
-            </div>
                     </div>
 
     </div>
