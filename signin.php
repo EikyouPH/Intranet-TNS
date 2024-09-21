@@ -3,15 +3,12 @@
 $is_invalid = false;
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    $mysqli = require __DIR__ . "/database.php";
+    require_once "database.php";
+    $user = $_POST["nom"];
+    $stmt = $pdo->prepare("SELECT * from utilisateurs WHERE nom_user = ?");
+    $stmt -> execute(array($user));
 
-    $sql = sprintf("SELECT * FROM utilisateurs 
-                    WHERE nom_user = '%s'",
-                    $mysqli->real_escape_string($_POST["nom"]));
-    
-    $result = $mysqli->query($sql);
-
-    $user = $result-> fetch_assoc();
+    $user = $stmt-> fetch();
 
     if ($user) {
         
