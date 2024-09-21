@@ -71,9 +71,10 @@
                 
                 <div class="card-body">
                     <h5 class="card-title">{$rapport.nom}</h5>
-                    <p class="card-text">{$rapport.lieu},{$rapport.date}</p>
-                    <p class="text text-primary">{$rapport.emp}</p>
-                    <a href="#" class="btn btn-primary">Voir</a>
+                    <p class="text text-primary">{$rapport.auteur}</p>
+                    <p class="card-text">
+                        {$rapport.lieu}, {$rapport.date_rapport}</p>
+                    <a href="./rapport.php?id={$rapport.id}" class="btn btn-primary">Voir</a>
                 </div>
             </div>
             {/foreach}
