@@ -81,8 +81,9 @@
                 <div class="card m-2" style="width: 18rem;">
                     
                     <div class="card-body">
-                        <h5 class="card-title text-primary">{$inter.nom}, {$inter.id}</h5>
-                        <p class="card-text">{$inter.lieu}, {$inter.date}</p>
+                        <h5 class="card-title text-primary">{$inter.nom}</h5>
+                        <p class="card-text">{$inter.type} <br>
+                                            {$inter.lieu}, {$inter.date}</p>
                         <a href="./intervention.php?id={$inter.id}" class="btn btn-primary">Voir</a>
                         <a href="./mInterventions.php?id={$inter.id}" class="btn btn-warning">Modifier</a> 
                     </div>
