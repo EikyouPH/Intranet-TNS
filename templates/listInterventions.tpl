@@ -85,7 +85,7 @@
                         <p class="card-text">{$inter.type} <br>
                                             {$inter.lieu}, {$inter.date}</p>
                         <a href="./intervention.php?id={$inter.id}" class="btn btn-primary">Voir</a>
-                        <a href="./mInterventions.php?id={$inter.id}" class="btn btn-warning">Modifier</a> 
+                        <a href="./mIntervention.php?id={$inter.id}" class="btn btn-warning">Modifier</a> 
                     </div>
                 </div>
             {/foreach}
