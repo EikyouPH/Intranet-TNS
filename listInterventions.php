@@ -6,7 +6,8 @@ session_start();
 try {
     require_once "database.php";
 
-    $sql = "SELECT * FROM interventions";
+    $sql = "SELECT ID_inter, nom_inter, lieu_inter, date_inter, nom_type FROM interventions
+            INNER JOIN type_inter ON interventions.type_inter = type_inter.ID_type";
 
     $result = $pdo->query($sql);
     $inters = array ();
@@ -24,7 +25,8 @@ try {
             "id" => $inter['ID_inter'],
             "nom" => $inter['nom_inter'],
             "lieu" => $inter['lieu_inter'],
-            "date" => date("d/m/Y", strtotime($inter['date_inter']))
+            "date" => date("d/m/Y", strtotime($inter['date_inter'])),
+            "type" => $inter['nom_type']
         );
     }
     
