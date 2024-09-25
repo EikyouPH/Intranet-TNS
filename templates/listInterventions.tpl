@@ -78,7 +78,7 @@
         </div>
         <div class="row">
             {foreach from = $interventions key = k item = inter}
-                <div class="card m-2" style="width: 18rem;">
+                <div class="card m-1" style="width: 20rem;">
                     
                     <div class="card-body">
                         <h5 class="card-title text-primary">{$inter.nom}</h5>
@@ -86,6 +86,7 @@
                                             {$inter.lieu}, {$inter.date}</p>
                         <a href="./intervention.php?id={$inter.id}" class="btn btn-primary">Voir</a>
                         <a href="./mIntervention.php?id={$inter.id}" class="btn btn-warning">Modifier</a> 
+                        <a href="./delIntervention.php?id={$inter.id}" class="btn btn-danger">Supprimer</a> 
                     </div>
                 </div>
             {/foreach}
