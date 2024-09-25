@@ -3,7 +3,7 @@
 $is_invalid = false;
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    require_once "database.php";
+    require_once "./includes/database.php";
     $user = $_POST["nom"];
     $stmt = $pdo->prepare("SELECT * from utilisateurs WHERE nom_user = ?");
     $stmt -> execute(array($user));

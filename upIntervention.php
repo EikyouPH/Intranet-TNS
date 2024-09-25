@@ -1,7 +1,7 @@
 <?php
 
 try {
-    require_once "database.php";
+    require_once "./includes/database.php";
 
     $nom_inter = htmlspecialchars($_POST["nom-intervention"]);
     $lieu_inter = htmlspecialchars($_POST["lieu"]);

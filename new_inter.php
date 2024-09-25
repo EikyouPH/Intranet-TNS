@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     try {
-        require_once "database.php";
+        require_once "./includes/database.php";
 
         $query = "INSERT INTO interventions (nom_inter, date_inter, lieu_inter, type_inter, desc_inter, emp_1, emp_2, emp_3) VALUES (?,?,?,?,?,?,?,?);";
 

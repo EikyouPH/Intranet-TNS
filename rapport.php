@@ -1,11 +1,11 @@
 <?php
 
-require ('./smartyHeader.php');
+require ('./includes/smartyHeader.php');
 session_start();
 
 if (isset($_SESSION["user_id"])){
     try {
-        require_once "database.php";
+        require_once "./includes/database.php";
         $sql = "SELECT auteur, nom_rapport, date_rapport, text_rapport, lieu_inter, nom_type, date_inter
                 FROM rapports 
                 INNER JOIN interventions ON rapports.id_inter = interventions.ID_inter

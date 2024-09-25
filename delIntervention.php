@@ -1,8 +1,8 @@
 <?php
 
-require ('./smartyHeader.php');
+require ('./includes/smartyHeader.php');
 try {
-    require_once "database.php";
+    require_once "./includes/database.php";
 
     $sql = "DELETE FROM interventions WHERE ID_inter = :id";
     $stmt = $pdo->prepare($sql);

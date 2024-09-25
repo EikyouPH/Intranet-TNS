@@ -2,7 +2,7 @@
 
 session_start();
 
-require ('./smartyHeader.php');
+require ('./includes/smartyHeader.php');
 
 if (isset($_SESSION["user_id"])){
 try {
